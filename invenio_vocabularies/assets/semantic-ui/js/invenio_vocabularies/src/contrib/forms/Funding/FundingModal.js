@@ -7,7 +7,7 @@
 import { i18next } from "@translations/invenio_vocabularies/i18next";
 import { Formik } from "formik";
 import PropTypes from "prop-types";
-import React, { useState } from "react";
+import { cloneElement, useState } from "react";
 import {
   EmptyResults,
   Error,
@@ -122,7 +122,7 @@ function FundingModal({
           centered={false}
           onOpen={openModal}
           open={open}
-          trigger={React.cloneElement(trigger, {
+          trigger={cloneElement(trigger, {
             "aria-expanded": open,
             "aria-haspopup": "dialog",
           })}

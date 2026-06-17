@@ -6,7 +6,7 @@
  */
 
 import { i18next } from "@translations/invenio_vocabularies/i18next";
-import React from "react";
+import { useRef } from "react";
 import { useDrag, useDrop } from "react-dnd";
 import { Button, Icon, Label, List, Ref } from "semantic-ui-react";
 
@@ -26,7 +26,7 @@ export const FundingFieldItem = ({
   deserializeFunder,
   computeFundingContents,
 }) => {
-  const dropRef = React.useRef(null);
+  const dropRef = useRef(null);
   // eslint-disable-next-line no-unused-vars
   const [_, drag, preview] = useDrag({
     item: { index, type: "award" },

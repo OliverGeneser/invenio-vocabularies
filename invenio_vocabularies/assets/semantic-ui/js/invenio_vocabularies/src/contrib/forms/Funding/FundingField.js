@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-import React from "react";
 import PropTypes from "prop-types";
 import { FieldArray, getIn } from "formik";
 import { HTML5Backend } from "react-dnd-html5-backend";

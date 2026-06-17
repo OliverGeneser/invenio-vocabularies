@@ -5,7 +5,6 @@
  */
 
 import PropTypes from "prop-types";
-import React from "react";
 import { Form, Header } from "semantic-ui-react";
 import { TextField, RemoteSelectField } from "react-invenio-forms";
 import { i18next } from "@translations/invenio_vocabularies/i18next";
